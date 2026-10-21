@@ -55,7 +55,7 @@ while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
     echo "</td><td>";
     echo htmlspecialchars($row['correo']);
     echo "</td><td>";
-    echo htmlspecialchars($row['aficiones']);
+    echo nl2br(htmlspecialchars($row['aficiones']));
     echo '</td><td class="text-nowrap">';
     echo '<a class="btn btn-outline-secondary btn-sm" href="ver.php?id_alumno=' . $id . '">ver</a>';
     if (isset($_SESSION['id_usuario'])) {

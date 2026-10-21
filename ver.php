@@ -57,7 +57,7 @@ if (isset($_SESSION['error'])) {
 <dt class="col-sm-3">Correo</dt>
 <dd class="col-sm-9"><?php echo htmlspecialchars($row['correo']); ?></dd>
 <dt class="col-sm-3">Aficiones</dt>
-<dd class="col-sm-9"><?php echo htmlspecialchars($row['aficiones']); ?></dd>
+<dd class="col-sm-9"><?php echo nl2br(htmlspecialchars($row['aficiones'])); ?></dd>
 </dl>
 <h2 class="h6">Cursos y certificaciones</h2>
 <ul class="list-group mb-4">
